@@ -1,0 +1,17 @@
+<template name="viewAllEmployees">
+    <div class="row">
+    {{#each employees}}
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/em.jpg">
+                        <span class="card-title">{{name}}</span>
+                    </div>
+                    <div class="card-content">
+                        <p><span class="bold employee-age">Edad: </span> {{age}}</p>
+                    </div>
+                </div>
+            </div>
+    {{/each}}
+    </div>
+</template>
