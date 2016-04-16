@@ -1,5 +1,17 @@
 /* CSS declarations go here */
+header, body, footer {
+      padding-left: 240px;
+}
+
 .employee-age{
     font-weight: bold;
 }
 
+.sidebar-logo{
+    max-height: 50px;
+    margin-top: 10%;
+}
+
+.brand-logo{
+    margin-left: 20px;
+}
