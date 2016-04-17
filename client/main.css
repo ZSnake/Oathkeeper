@@ -15,3 +15,17 @@ header, body, footer {
 .brand-logo{
     margin-left: 20px;
 }
+
+.status-icon{
+    margin-top:1%;
+}
+
+.status-available{
+    color: #0AE90A;
+    text-shadow: 0px 0px 5px #03CE12;
+}
+
+.status-unavailable{
+    color: #ff0000;
+    text-shadow: 0px 0px 5px #bc0000;
+}

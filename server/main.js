@@ -6,12 +6,8 @@ import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
 Meteor.startup(() => {
     let employees = seedEmployees();
-    console.log('startup');
-    let em = Employees.find({});
-    console.log(em.count());
-    if(em.count() === 0){
+    if(Employees.find({}).count() === 0){
         for(let i = 0; i < employees.length; i++){
-            console.log(Employees);
             Employees.insert(employees[i]);
         }
     }
@@ -22,32 +18,32 @@ let seedEmployees = () => {
       {
           name: "Sylvanna",
           age: 24, 
-          status: true
+          available: true
       },
       {
           name: "Rylai",
           age: 21, 
-          status: false
+          available: false
       },
       {
           name: "Traxex",
           age: 29, 
-          status: true
+          available: true
       },
       {
           name: "Lanaya",
           age: 24, 
-          status: true
+          available: true
       },
       {
           name: "Lina",
           age: 27, 
-          status: true
+          available: true
       },
       {
           name: "Tresdin",
           age: 32, 
-          status: true
+          available: true
       }
   ]
 }

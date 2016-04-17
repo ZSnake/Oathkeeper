@@ -1,14 +1,21 @@
 <template name="viewAllEmployees">
     <div class="row">
     {{#each employees}}
-            <div class="col s6">
+            <div class="col s4">
                 <div class="card">
                     <div class="card-image">
                         <img src="images/em.jpg">
                         <span class="card-title">{{name}}</span>
                     </div>
                     <div class="card-content">
-                        <p><span class="bold employee-age">Edad: </span> {{age}}</p>
+                        <p>
+                            <span class="bold employee-age">Edad: </span> {{age}}
+                            {{#if available}}
+                                <i id="statusIcon" class="fa fa-circle right status-icon status-available" aria-hidden="true"></i>
+                            {{else}}
+                                <i id="statusIcon" class="fa fa-circle right status-icon status-unavailable" aria-hidden="true"></i>
+                            {{/if}}
+                        </p>
                     </div>
                 </div>
             </div>
