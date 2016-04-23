@@ -1,0 +1,23 @@
+<template name="employeeDetails">
+    <div class="card row">
+        <div class="col s4">
+          <div class="card profile-card">
+                <div class="card-image">
+                    <img src="images/em.jpg">
+                    <span class="card-title">{{name}}</span>
+                </div>
+                <div class="card-content">
+                    <p>
+                        <span class="bold employee-age">Edad: </span> {{age}}
+                        {{#if available}}
+                            <i id="statusIcon" class="fa fa-circle right status-icon status-available" aria-hidden="true"></i>
+                        {{else}}
+                            <i id="statusIcon" class="fa fa-circle right status-icon status-unavailable" aria-hidden="true"></i>
+                        {{/if}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="calendar" class="calendar col s8"></div>
+      </div>
+</template>
