@@ -13,6 +13,10 @@ Schema.event = new SimpleSchema({
     type: Boolean,
     defaultValue: true,
   },
+  employeeId: {
+      type: String,
+      max: 50
+  }
 });
 
 Events.attachSchema(Schema.event);
