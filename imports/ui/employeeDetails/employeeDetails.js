@@ -4,7 +4,7 @@ import './employeeDetails.html';
 
 
 
-Template.employeeDetails.rendered = function(){
+Template.employeeDetails.onRendered(function(){
     var currentEmployee = this.data;    
     $('#calendar').fullCalendar({
         events: Events.find({employeeId: currentEmployee._id.toString()}).fetch(),
@@ -15,5 +15,6 @@ Template.employeeDetails.rendered = function(){
             $('#calendar').fullCalendar('renderEvent', newEvent);
         }
     });
-};
+});
 
+//read about publish and just publish to things needed

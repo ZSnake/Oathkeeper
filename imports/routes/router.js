@@ -1,6 +1,10 @@
 import { Router } from 'meteor/iron:router'
 import {Employees} from '../api/employees/employees.js'
 
+import '../ui/viewAllEmployees/viewAllEmployees.js';
+import '../ui/employeeDetails/employeeDetails.js';
+import '../ui/layout/layout.js';
+
 Router.configure({
   layoutTemplate: 'layout'
 });
