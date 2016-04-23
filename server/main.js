@@ -1,5 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Employees } from '../imports/api/employees/employees.js';
+import { Events } from '../imports/api/events/events.js';
 import { Mongo } from 'meteor/mongo';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
