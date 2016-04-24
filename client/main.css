@@ -37,3 +37,12 @@ header, body, footer {
 .profile-card{
     margin-top: 8%
 }
+
+.welcomeContainer{
+    margin-right: 1%;
+}
+
+.handCursor{
+    cursor: pointer; 
+    cursor: hand;
+}
