@@ -46,3 +46,8 @@ header, body, footer {
     cursor: pointer; 
     cursor: hand;
 }
+
+#toast-container {
+  right: 2%;
+  top: 7%;
+}
