@@ -51,3 +51,12 @@ header, body, footer {
   right: 2%;
   top: 7%;
 }
+
+
+.picker__date-display{
+    background-color: #1a237e;
+}
+
+.picker__weekday-display{
+    background-color: #0F1553;
+}
