@@ -2,13 +2,14 @@
     <nav>
         <div class="nav-wrapper fixed indigo darken-4">
             <a href="#" class="brand-logo">Oathkeeper</a>
+            
             {{#if currentUser}}
                 <span class="right welcomeContainer">
                     
                 </span>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">Bienvenido, <b>{{currentUser.profile.firstName}}</b></a></li>
-                    <li ><a id="#signoutButton" class="waves-effect waves-light btn blue darken-1">Cerrar Sesión</a></li>
+                    <li id="signoutButton"><a class="waves-effect waves-light btn blue darken-1">Cerrar Sesión</a></li>
                 </ul>
             {{else}}
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
